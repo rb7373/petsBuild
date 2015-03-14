@@ -1,0 +1,64 @@
+header(md-page-header="")
+    div(md-header-picture="", style="background-image:url(/img/main.jpg)")
+    md-toolbar(pt-scroll="")
+        .md-toolbar-tools
+            md-button.md-tools(aria-label="Ayudar")
+                i.ion-heart
+            h2(md-header-title="", flex="", style= "color:black") Rescate Animal
+            //md-button.md-tools(aria-label="Opciones")
+                i.ion-android-more-vertical
+
+
+            lx-dropdown(position="right")
+                button.btn.btn--m.btn--white.btn--icon(lx-ripple="", lx-dropdown-toggle="")
+                    i.mdi.mdi-dots-vertical
+                lx-dropdown-menu(position="relative")
+                    ul
+                        li
+                            a.dropdown-link Action
+                        li
+                            a.dropdown-link Another action
+                        li
+                            a.dropdown-link Something else here
+                        li.dropdown-divider
+                        li
+                            a.dropdown-link.dropdown-link--is-header Header
+                        li
+                            a.dropdown-link Separated link
+
+
+    .main-fab
+        md-button.md-fab.md-accent(aria-label="")
+            i.ion-android-star
+br
+br
+section#page-section
+
+    div(layout="row", layout-align="center center")
+        div(flex="55")
+            md-content
+                //h2 Rescate Animal
+                p
+                    | Asociación sin fines de lucro que se dedica a rescatar y salvar animales de la calle que se encuentren en peligro y que han sido maltratados o abusados.
+
+    md-divider
+
+md-grid-list(md-cols-sm="1", md-cols-md="2", md-cols-gt-md="6", md-row-height-gt-md="1:1", md-row-height="2:2", md-gutter="12x", md-gutter-gt-sm="8px")
+    md-grid-tile.gray(md-rowspan="3", md-colspan="2")
+        md-grid-tile-footer
+            h3 #1: (3r x 2c)
+    md-grid-tile.green
+        md-grid-tile-footer
+            h3 #2: (1r x 1c)
+    md-grid-tile.yellow
+        md-grid-tile-footer
+            h3 #3: (1r x 1c)
+    md-grid-tile.blue(md-rowspan="2")
+        md-grid-tile-footer
+            h3 #4: (2r x 1c)
+    md-grid-tile.red(md-rowspan="2", md-colspan="2")
+        md-grid-tile-footer
+            h3 #5: (2r x 2c)
+    md-grid-tile.green(md-rowspan="2")
+        md-grid-tile-footer
+            h3 #6: (2r x 1c)
