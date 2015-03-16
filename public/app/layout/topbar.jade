@@ -1,35 +1,22 @@
 header(md-page-header="")
-    div(md-header-picture="", style="background-image:url(/img/main.jpg)")
-    md-toolbar(pt-scroll="")
-        .md-toolbar-tools
-            md-button.md-tools(aria-label="Ayudar")
-                i.ion-heart
-            h2(md-header-title="", flex="", style= "color:black") Rescate Animal
-            //md-button.md-tools(aria-label="Opciones")
-                i.ion-android-more-vertical
+    div(flex-item="")
+        .card.bgc-indigo-500
+            .toolbar
+                button(class="btn btn--l btn--white btn--icon", lx-ripple ="")
+                    i(class="mdi mdi-menu")
+                span.toolbar__label.fs-title.tc-white-1.ml Rescate Animal
+                .toolbar__right
+                    lx-search-filter(model="searchFilter.sixth", position="right", theme="dark", closed="", placeholder="Buscar")
+                    //button.btn.btn--l.btn--white.btn--icon(lx-ripple="")
+                        i.mdi.mdi-apps
 
 
-            lx-dropdown(position="right", from-top="true")
-                button.btn.btn--m.btn--white.btn--icon(lx-ripple="", lx-dropdown-toggle="")
-                    i.mdi.mdi-dots-vertical
-                lx-dropdown-menu
-                    ul
-                        li
-                            a.dropdown-link Action
-                        li
-                            a.dropdown-link Another action
-                        li
-                            a.dropdown-link Something else here
-                        li.dropdown-divider
-                        li
-                            a.dropdown-link.dropdown-link--is-header Header
-                        li
-                            a.dropdown-link Separated link
 
+div(md-header-picture="", style="background-image:url(/img/main.jpg)")
+.main-fab
+    md-button.md-fab.md-accent(aria-label="")
+        i.ion-android-star
 
-    .main-fab
-        md-button.md-fab.md-accent(aria-label="")
-            i.ion-android-star
 br
 br
 section#page-section
